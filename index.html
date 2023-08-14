@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SocialMail-Spoofer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SocialMail-Spoofer</h1>
+        <form id="mailForm">
+            <label for="fname">Nom de l'expéditeur :</label>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="mail">Adresse e-mail de l'expéditeur :</label>
+            <input type="email" id="mail" name="mail" required><br>
+
+            <label for="to">Adresse e-mail du destinataire :</label>
+            <input type="email" id="to" name="to" required><br>
+
+            <label for="sub">Objet du message :</label>
+            <input type="text" id="sub" name="sub" required><br>
+
+            <label for="mes">Message :</label>
+            <textarea id="mes" name="mes" rows="5" required></textarea><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
